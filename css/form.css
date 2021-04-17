@@ -1,0 +1,133 @@
+
+.contact {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.contact fieldset{
+    max-width: 100%;
+}
+.contact input, .contact textarea{
+    text-align: center;
+    margin: 1rem 0;
+    width:100%;
+    border-radius: 1em;
+    padding: 1rem;
+    /* width: 11em; */
+    background-color: #f7f7f7;
+    border-style: none;
+    outline: none;
+}
+.contact textarea:focus{
+    text-align: left;
+}
+
+button.send-message{
+    margin-top: 1rem;
+    padding: 0.5rem 5rem;
+   
+}
+/* #subject {
+    margin-top: 1.3em;
+    width: 23em;
+    border-radius: 1em;
+    background-color: #f7f7f7;
+    border-style: none;
+
+
+
+
+}
+
+#message {
+    margin-top: 1.3em;
+    border-radius: 1em;
+    background-color: #f7f7f7;
+    border-style: none;
+
+
+
+} */
+
+.together {
+    max-width: 100%;
+    display: flex;
+}
+
+/* .nome {
+    border-radius: 1em;
+    background-color: #f7f7f7;
+    border-style: none;
+
+
+
+}
+
+.email {
+    border-radius: 1em;
+    width: 11.5em;
+    background-color: #f7f7f7;
+    border-style: none;
+
+
+
+} */
+
+/* .button {
+    background-color: #46cc46;
+    color: #484c4b;
+    border-radius: 1em;
+    margin-top: 1em;
+    width: 5em;
+    border-style: none;
+    
+
+} */
+/* 
+@media screen and (max-width: 364px){
+    #subject{
+        width: 20em;
+    }
+
+    #message {
+        width: 20em;
+    }
+    .email {
+        width: 10em;
+    }
+    #name {
+        width: 9.5em;
+    }
+}
+
+@media screen  and (max-width: 316px) {
+    #name {
+        width: 8.6em;
+
+    }
+    #subject {
+        width: 18em;
+    }
+    #message {
+        width: 18em;
+    }
+    .email {
+        width: 9em;
+    }
+}
+
+@media screen and (max-width: 285px) {
+    #subject {
+        width: 16.5em;
+    }
+    #message {
+        width: 16.5em;
+    }
+    #name {
+        width: 7.5em;
+    }
+    .email {
+        width: 8.5em;
+    }
+} */
+

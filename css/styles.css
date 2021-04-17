@@ -1,17 +1,292 @@
-body{
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
+@font-face {
+    font-family:'Lato-Regular';
+    src:url("../fonts/Lato-Regular.ttf");
 }
-section.main
-{
-    position:relative;
-    width: 100%;
+@font-face {
+    font-family:'Lato-Black';
+    src:url("../fonts/Lato-Black.ttf");
+}
+@font-face {
+    font-family:'Lato-Bold';
+    src:url("../fonts/Lato-Bold.ttf");
+}
+ body {
+    margin:0;
+    
+    padding:0;  
+
+    
+     }
+html,body{
     height: 100%;
-    z-index:-2;
-    background: lightblue;
+    min-height: 100vh;
+}
+body{
+  font-family: sans-serif;
+  overflow-x: hidden;
+  font-weight: normal;
 }
 
+span,body{
+    font-family: 'Lato-Regular', 'Arial';
+
+}
+
+h1,h3{
+    font-family: 'Lato-Black';
+}
+
+
+ section.main
+{
+    padding:0;
+    margin: 0;
+    /* width: 100vw;
+    height: 100vh; */
+
+    
+}
+
+
+
+ section.dobra-1{
+
+    margin: 0;
+    /* background: tomato; */
+    background:url("../img/Background-dobra-1.png") ; 
+    /* background-size: 100vw 100%; */
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+    background-attachment: scroll;
+    /* background-position: center; */
+    min-width: 100vw;
+    min-height: 500px;
+
+    /* min-height: 80%; */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 0;
+    word-wrap: break-word;
+
+
+
+}
+
+
+.navbar-bullseye{
+    background: #545454 !important;
+    padding: 10px;
+    padding-left: 100px;
+    font-weight: bold;
+    margin:20px 30px;
+    margin-left: 40px;
+    border-radius: 40px;
+    padding-right: 25px;
+    font-size: 14px;
+    z-index: 2;
+  } 
+ 
+  .navbar-nav > li{
+      padding:0 0.7rem;
+      
+  }
+  @media(min-width:992px)
+  {
+     .navbar-items{
+         display: flex;
+         justify-content: space-between;
+      }
+ 
+      .logo-nav-collapsed{
+         display: none;
+     }
+ 
+     a.company-name{
+         display: none;
+     }
+  }
+ 
+ button.geral-button{
+     background: #46cc66;
+     color: #29723a;
+     font-weight: bold;
+     border-radius: 50px;
+     border: none;
+     padding: 5px 20px;
+     outline: none;
+     transition: 0.7s;
+
+ }
+
+ button.geral-button:hover{
+    cursor: ponter;
+    color: #69fd8b;
+    background: #29723a;
+    transition: 0.7s;
+
+
+}
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
+  transition: 0.7s;
+
+}
+ .nav-link{
+     color: #F7F7F7!important;
+ 
+ }
+ 
+ .logo-circle{
+     margin-top: 1.22em;
+     margin-left: 25px;
+     width: 80px;
+     height: 80px;
+     border-radius: 100%;
+     background: #545454;
+     z-index: 3;
+     position: fixed;
+     text-align: center;
+     padding:15px;
+     
+ 
+ }
+ 
+ 
+ @media(max-width: 991px)
+ {
+     .logo-circle{
+ 
+     display:none;
+     }
+     .navbar-bullseye{
+         padding-left: 0;
+         padding: 0 20px 0 10px;
+ 
+     }
+ 
+     .navbar-collapse{
+         padding: 15px;
+     }
+ 
+     
+ }
+ .logo-circle a .logo-nav{
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .logo-nav-collapsed{
+     max-width: 80%;
+ }
+ .navbar-brand{
+     display: inline;
+     
+ }
+ 
+ a.navbar-brand.company-name{
+     color:#F7F7F7
+;
+ 
+ }
+
+ .header-section{
+   /* height: 500px; */
+
+    
+
+}
+div.header-1{
+    padding-top: 5rem;
+    padding-bottom: 75px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    z-index: 0;
+    max-width: 100%;
+    /* max-height: 100%; */
+    margin-left: 10%;
+    min-height: 10vh;
+
+
+}
+
+div.header-2{
+    padding: 7rem 3rem;
+    padding-bottom: 10rem;
+    text-align: left;
+    z-index: 0;
+    position: relative;
+    max-width: 100%;
+    min-height: 700px;
+
+}
+
+
+.header-2 img.target{
+    width: 100%;
+}
+div.header-2 .header-text{
+    margin-bottom: 0;
+}
+
+.header-1 .header-content{
+    display: flex;
+    padding: 5rem 0;
+    flex-direction: column;
+    z-index: 0;
+    margin-left: -22%;
+    align-items: start;
+
+}
+.header-text{
+    margin-bottom:30%;
+
+}
+
+.header-text h3{
+    max-width: 100%;
+    color: #545454;
+    font-weight: bold;
+}
+
+.header-text h6{
+    margin-top: 10px;
+    color: #76767c;
+    font-weight: 500;    
+    width:60%;
+}
+
+.header-2 .header-text h6{
+    width: unset;
+}
+
+
+img.target{
+    z-index: -1;
+    width:60%;
+  
+}
+
+button.create-account{
+    margin-top: -10%;
+    max-width: 210px;
+    font-size: 13px;
+    padding:10px;
+    background: #46cc66;
+     color: #29723a;
+     font-weight: bold;
+     border-radius: 50px;
+     border: none;
+     /* padding: 5px 20px; */
+}
+
+
+/*
 section.container-2
 {
     width: 100%;
@@ -30,7 +305,7 @@ section.one
 }
 
 section.one:before{
-    /* margin-top: -20%; */
+     margin-top: -20%; 
     margin-left: 2%;
     content:'';
     position:absolute;
@@ -67,41 +342,592 @@ section.one .content h2{
     color: black;
     font-size: 3em;
 }
+*/
 
-
-.nav-bull{
-    margin:20px;
-    border-radius: 30px;
-  }
-
-
+ 
+/*
 .first{
   width: 100%;
   height: 50%;
+  transform-origin: top right;
   background: 
     radial-gradient(100% 100% at top, transparent 60%, yellow 61%), 
     url(https://i.picsum.photos/id/10/800/800.jpg) center/cover;
-}
-/* .container {
-    z-index: 1;
-    text-align: center;
-    font-family: sans-serif;
-    color: #000;
-    }
-    .container h1 {
-    font-size: 4em;
-    }
-    .container p {
-    font-size: 2em;
-    margin: 0 2em;
-    }
-    .lower-curve svg {
-        z-index: 1;
-    }
-    .upper-curve svg {
+} */
+
+
+
+
+section.dobra-2{
+    margin: 0;
+    /* margin-top: -100vh; */
+    background: pink; 
+    /* padding: 20vh 10vw;  */
+    /* background:url("../img/Background-dobra-2.png") ; */
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    min-height: 100vh;
+
+    
+    position: relative;
     display: block;
-    }  */
+    overflow: hidden;
+    z-index: -2; 
+    word-wrap: break-word;
 
-   
+}
 
+.d2-out{
+    padding-top: 5rem;
+    max-height: fit-content;
+}
+.d2-texts{
+    margin-top: 400px;
+    /* margin: auto; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d2-text{
+    color: #483c4b;
+}
+.d2-text h6{
+    font-weight: bold;
+
+}
+.d2-texts .d2-one{
+     /* margin-top: -100px;  */
+    margin-top: 90px;
+    padding:30px 13%;
+
+
+}
+
+.d2-texts .d2-two{
+    margin-top: 50px;
+     /* margin-top: -140px;   */
+    padding:30px 25%;
+    margin-left: -25%;
+
+    
+}
+
+
+section.dobra-3{
+    margin: 0;
+    /* margin-top: -900px; */
+    /* min-height: 1500px; */
+    /* background: pink; */
+    /* padding: 50vh 0;  */
+    /* background:url("../img/Background-dobra-3.png") ; */
+    background-repeat: no-repeat;
+    
+    /* -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain; */
+    min-width: 100%;
+    /* height: 100%;  editied */
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: -3; 
+    word-wrap: break-word
+
+
+
+  
+}
+@media (min-width:768px) and (max-width:1024px)
+{
+    section.dobra-3{
+        -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: center;
+
+    }
+}
+.d3-content{
+    /* margin-top: 120vh; */
+    max-height: 100%;
+    word-wrap: break-word;
+    overflow:hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.out-container
+{
+    padding: 5rem;
+
+}
+.one{
+    margin-top: 10rem;
+    padding-right: 5rem;
+    margin-left: -5rem;
+
+}
+
+.two{
+    padding-left: 5rem;
+    margin-right:-5rem ;
+
+}
+.services-columns{
+    display: flex;
+    justify-content: center;
+}
+
+
+.services{
+    display: flex;
+    max-width: 100%;
+    z-index: 1;
+    justify-content: center;
+}
+
+.services .items{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.service-row{
+    margin: 50px 0;
+    display: flex;
+}
+
+.service-img {
+    max-width: 45%;
+
+}
+.img-left .service-img{
+    text-align: center;
+}
+
+.img-left .service-desc{
+    text-align: left;
+}
+
+.img-right .service-desc{
+    text-align:right;
+}
+
+.service-desc h6{
+    font-weight: bold;
+    color: #545454;
+
+}
+
+.service-desc p {
+    color: #767c7c;
+}
+
+.service-img img{
+    width:90%;
+}
+
+.service-desc{
+    padding-left:0;
+}
+
+.dobra-4{
+
+    width: 100%;
+    min-height: 80vh;
+    background: purple;
+    background:url("../img/Background-dobra-4.png") ;
+
+    
+    /* padding:100vh 0; */
+    margin: 0;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: -4; 
+    word-wrap: break-word;
+}
+
+.dobra-5{
+    width: 100%;
+    background: rgb(206, 206, 246);
+    /* background:url("../img/Background-dobra-4.png") ; */
+
+    
+    /* padding:100vh 0; */
+    margin: 0;
+    position: relative;
+    /* display: block; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -6; 
+    word-wrap: break-word;
+    min-height: 100vh;
+
+}
+
+.para-empresas{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+}
+
+.para-empresas h1{
+
+    color: #545454;
+    padding-bottom: 0.5em;
+
+}
+.personalize{
+    
+    color: #F7F7F7;
+    background-color: #545454;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+}
+
+.personalize .text{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    width: 90%;
+}
+
+.personalize .text .bold{
+    font-family: 'Lato-Black';
+    font-weight: normal;
+    text-align: left;
+}
+.dobra-5 h6{
+    font-weight: normal;
+    font-family: 'Lato-Black';
+    font-weight: 600;
+    padding: 1rem;
+    /* width: 100%; */
+}
+.dobra-5 p {
+    /* padding-top: 1rem; */
+    font-size: 15px;
+}
+
+.img-video{
+    padding: 0;
+}
+.img-video img{
+
+    padding: 2rem;
+    max-width: 100%;
+    
+}
+.dobra-4 .subscribe{
+    color:#F7F7F7
+;
+}
+
+.subscribe-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.subscribe-text h6{
+    width:200px;
+    font-weight: 700;
+
+}
+
+section.dobra-7{
+    background-color: black;
+    width: 100%;
+    /* background:url("../img/Background-dobra-4.png") ; */
+
+    
+    /* padding:100vh 0; */
+    margin: 0;
+    position: relative;
+    /* display: block; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -7; 
+    word-wrap: break-word;
+    min-height: 100vh;
+}
+
+.d7-container{
+
+    max-width: 100%;
+    
    
+}
+
+
+@media (max-width:325px)
+{
+    a.navbar-brand.company-name{
+        display: none;
+
+    }
+}
+
+@media(min-width:600px)
+    {
+        div.header-2{
+            display: none;
+        }
+
+
+    }
+
+
+
+@media(max-width:599px)
+    {
+       
+        div.header-1{
+            display: none;
+        }
+
+        .one{
+            padding-right: 0;
+            margin-left: 0;
+        }
+
+        .two{
+            padding-left: 0;
+            margin-right: 0;
+        }
+
+        .out-container{
+            padding: 0 2rem;
+            
+        }
+
+        .d2-texts .d2-two, .d2-texts .d2-one{
+            padding:0;
+        }
+    }
+    @media(max-width:768px)
+    {
+        .d2-texts .d2-two{
+            margin-left: 0;
+        }
+    
+        .navbar-bullseye{
+            margin: 20px 10px;
+        }
+    
+        .personalize{
+            border-radius: 25px;
+        }
+    
+    }
+    
+    
+
+/* 
+    section.dobra-1, section.dobra-2, section.dobra-3{
+        height: 100vh;
+    } */
+
+.header-button-2 button.create-account{
+        margin-top: 0;
+
+}
+
+@media(min-width:1025px)
+{
+    .services .items{
+        max-width: 70%;
+
+    }
+
+    section.dobra-1, section.dobra-2 {
+        background-repeat: no-repeat;
+        -moz-background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+        } 
+    section.dobra-3{
+        -moz-background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    
+  
+}
+
+/* 
+@media (max-width:767px)
+{
+    section.dobra-1{
+    background-size: 100% 80vh;
+
+    }
+}
+
+
+@media (max-width:1024px)
+{
+    section.dobra-1{
+    background-size: 100% 50vh;
+
+    }
+} */
+
+@keyframes fadeInUp {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(50px);
+        -moz-transform: translatey(50px);
+        -o-transform: translatey(50px);
+        transform: translatey(50px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(-100px);
+        -moz-transform: translatey(-100px);
+        -o-transform: translatey(-100px);
+        transform: translatey(-10px);
+    }
+}
+.in-up {
+    -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp;
+    -o-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(-100px);
+        -moz-transform: translatey(-100px);
+        -o-transform: translatey(-100px);
+        transform: translatey(-20px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+.in-down {
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+.in-left {
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-duration:1s;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeinRight {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+       
+    }
+    to {
+        opacity:1;
+      
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+}
+.in-right {
+    -webkit-animation-name: fadeinRight;
+    -moz-animation-name: fadeinRight;
+    -o-animation-name: fadeinRight;
+    animation-name: fadeinRight;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-duration:1s;
+    animation-delay: 0.5s;
+}
