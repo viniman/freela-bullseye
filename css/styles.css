@@ -52,8 +52,8 @@ h1,h3{
  section.dobra-1{
 
     margin: 0;
-    /* background: tomato; */
-    background:url("../img/Background-dobra-1.png") ; 
+    background: tomato;
+    /* background:url("../img/Background-dobra-1.png") ;  */
     /* background-size: 100vw 100%; */
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -88,6 +88,20 @@ h1,h3{
     font-size: 14px;
     z-index: 2;
   } 
+
+  
+  .nav-item:after{
+      content: '';
+      display: block;
+      border-bottom: 2px solid #F7F7F7 ;
+      transform: scaleX(0);  
+      transition: 250ms ease-in-out;
+
+  }
+
+  .nav-item:hover::after{
+    transform: scaleX(1);
+  }
  
   .navbar-nav > li{
       padding:0 0.7rem;
@@ -131,8 +145,9 @@ h1,h3{
 }
 .raise:hover,
 .raise:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em;
-  transform: translateY(-0.25em);
+    box-shadow: #767c7c;
+  box-shadow: 0 1rem 1rem -0.4rem #767c7c;
+  transform: translateY(-0.30rem);
   transition: 0.7s;
 
 }
@@ -201,6 +216,7 @@ h1,h3{
 
 }
 div.header-1{
+    margin-top: 5rem;
     padding-top: 5rem;
     padding-bottom: 75px;
     display: flex;
@@ -467,12 +483,17 @@ section.dobra-3{
     justify-content: center;
 }
 
+.one, .two{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .out-container
 {
-    padding: 5rem;
+    /* padding: 5rem; */
 
 }
-.one{
+/* .one{
     margin-top: 10rem;
     padding-right: 5rem;
     margin-left: -5rem;
@@ -483,7 +504,7 @@ section.dobra-3{
     padding-left: 5rem;
     margin-right:-5rem ;
 
-}
+} */
 .services-columns{
     display: flex;
     justify-content: center;
@@ -710,41 +731,42 @@ section.dobra-7{
             display: none;
         }
 
-        .one{
-            padding-right: 0;
-            margin-left: 0;
-        }
+       
 
-        .two{
-            padding-left: 0;
-            margin-right: 0;
-        }
-
-        .out-container{
+        /* .out-container{
             padding: 0 2rem;
             
-        }
+        } */
 
         .d2-texts .d2-two, .d2-texts .d2-one{
             padding:0;
         }
     }
-    @media(max-width:768px)
-    {
-        .d2-texts .d2-two{
-            margin-left: 0;
-        }
-    
-        .navbar-bullseye{
-            margin: 20px 10px;
-        }
-    
-        .personalize{
-            border-radius: 25px;
-        }
-    
+@media(max-width:768px)
+{
+    .d2-texts .d2-two{
+        margin-left: 0;
     }
-    
+
+    .navbar-bullseye{
+        margin: 20px 10px;
+    }
+
+    .personalize{
+        border-radius: 25px;
+    }
+    .one{
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    .two{
+        padding-left: 0;
+        margin-right: 0;
+    }
+
+}
+
     
 
 /* 
