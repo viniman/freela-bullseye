@@ -327,7 +327,6 @@ section.dobra-2{
     z-index: -1;
     word-wrap: break-word;
     padding: 3rem;
-    border: solid 3px black;
 
 }
 
@@ -410,7 +409,6 @@ section.dobra-3{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 3px white;
 }
 
 
@@ -556,7 +554,6 @@ section.dobra-4{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 3px black;
 }
 
 #bg-4{
@@ -600,7 +597,6 @@ section.dobra-5{
     align-items: center;
     justify-content: center;
     /* background: greenyellow; */
-    border: solid 3px blue;
  
 
 }
@@ -714,7 +710,6 @@ section.dobra-6{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 3px red;
  
 
 }
@@ -853,7 +848,6 @@ section.dobra-7{
     align-items: center;
     z-index: -6;
     word-wrap: break-word;
-    border: 3px solid white
 }
 #bg-7{
     min-height:1100px;
