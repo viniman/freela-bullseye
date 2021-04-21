@@ -1,17 +1,12 @@
-/* html body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-} */
+
 footer {
     /* position: fixed; */
     /* z-index: -9; */
+    background: #545454;
     padding-top: 5em;
     padding-bottom: 1.5em;
     width: 100%;
     bottom: 0%;
-    background-color: #484c4b;
 }
 
 .footer-box {
@@ -44,7 +39,6 @@ footer .wrapper:after{
 }
 .button-footer {
     background-color: #46cc46;
-    color: #484c4b;
     border-radius: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
