@@ -39,6 +39,19 @@ h1,h3{
 
 }
 
+#ancora1, #ancora2, #ancora3, #bullseye-midia, #para-empresas, #contato{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    margin-top: -10px; 
+    z-index: -1;
+}
+
+#contato{
+    margin-top: -150px;
+}
+
 
 
  section.dobra-1{
@@ -65,11 +78,7 @@ h1,h3{
     display: block;
     z-index: 0;
     background-repeat: no-repeat;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: scroll; */
-    /* background-position: center; */
+
 }
 
 
@@ -88,18 +97,6 @@ h1,h3{
   }
 
 
-  .nav-item:after{
-      content: '';
-      display: block;
-      border-bottom: 2px solid #F7F7F7 ;
-      transform: scaleX(0);
-      transition: 250ms ease-in-out;
-
-  }
-
-  .nav-item:hover::after{
-    transform: scaleX(1);
-  }
 
   .navbar-nav > li{
       padding:0 0.7rem;
@@ -120,6 +117,8 @@ h1,h3{
          display: none;
      }
   }
+
+
 
  button.geral-button{
      background: #46cc66;
@@ -207,13 +206,12 @@ h1,h3{
 
 
  .header-section{
-    margin-top: 5rem;
+    margin-top: 1rem;
     padding: 2rem;
      display: flex;
      align-items: center;
      width: 100%;
      max-height: 100%;
-   /* height: 500px; */
 
 
 
@@ -226,21 +224,19 @@ img.target {
 div.header-1{
 
 
-    /* padding-bottom: 75px; */
     display: flex;
     justify-content: start;
     align-items: center;
     z-index: 0;
     max-width: 100%;
-    /* max-height: 100%; */
     margin-left: 10%;
-    max-height: 100%;
+    min-height: 500px;
 
 
 }
 
 div.header-2{
-    padding: 0 3rem;
+    padding: 0 3em;
     padding-bottom: 10rem;
     text-align: left;
     z-index: 0;
@@ -252,7 +248,7 @@ div.header-2{
 
 
 .header-2 img.target{
-    width: 70%;
+    width: 80%;
 }
 div.header-2 .header-text{
     margin-bottom: 0;
@@ -310,15 +306,13 @@ button.create-account{
      font-weight: bold;
      border-radius: 50px;
      border: none;
-     /* padding: 5px 20px; */
 }
 
 
 section.dobra-2{
     margin: 0;
     margin-top: -550px;
-    /* background: pink;  */
-    /* padding: 20vh 10vw;  */
+   
     min-width: 100%;
     min-height: 550px;
     position: relative;
@@ -341,11 +335,7 @@ section.dobra-2{
     display: block;
     z-index: -2;
     background-repeat: no-repeat;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: scroll; */
-    /* background-position: center; */
+   
 
 }
 
@@ -358,9 +348,6 @@ section.dobra-2{
     font-family: 'Lato-Black';
     position: relative;
     z-index: 2;
-
-    /* margin-top: 400px; */
-    /* margin: auto; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -375,18 +362,13 @@ section.dobra-2{
 
 }
 .d2-texts .d2-one{
-     /* margin-top: -100px;  */
     margin-top: 110px;
-    /* padding:30px 0; */
 
 
 }
 
 .d2-texts .d2-two{
-    margin-top: 50px;
-     /* margin-top: -140px;   */
-    /* padding:30px 0; */
-    margin-left: -3rem;
+    margin-right: 8em;
 
 
 }
@@ -394,10 +376,7 @@ section.dobra-2{
 
 section.dobra-3{
     margin: 0;
-    padding: 5rem 0;
-    margin-top: -900px;
-    /* background: pink;  */
-    /* padding: 20vh 10vw;  */
+    margin-top: -1645px;
     min-width: 100%;
     min-height: 700px;
     position: relative;
@@ -405,7 +384,6 @@ section.dobra-3{
     overflow: hidden;
     z-index: -2;
     word-wrap: break-word;
-    /* background: indigo; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -413,10 +391,9 @@ section.dobra-3{
 
 
 #bg-3{
-    min-height: 1900px;
+    min-height: 2700px;
     margin-top: -1150px;
-    /*linear-gradient(rgba(87, 86, 86, 0.6), rgba(75, 75, 75, 0.616)), */
-    background: linear-gradient(rgba(141, 140, 140, 0.6),rgba(12, 12, 12, 0.603)), url("../img/Background-dobra-3.png");
+    background: url("../img/Background-dobra-5.png");
     /* background:lightgreen; */
     background-position: center;
     background-size: 100% 100%;
@@ -424,54 +401,44 @@ section.dobra-3{
     display: block;
     z-index: -3;
     background-repeat: no-repeat;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-position: center;  */
+  
 
 }
 
+.pc-image{
+    text-align: center;
+}
 
 
+.pc-image img{
+    max-width: 100%;
+}
 .d3-content{
-    /* margin-top: 120vh; */
     max-height: 100%;
     word-wrap: break-word;
-    overflow:hidden;
 }
 .container{
     display: flex;
     justify-content: center;
 }
 
-
-
-.two{
-    /* margin-top: -8rem; */
-
+.dobra-3 .colunas{
+    margin-top: 8rem;
 }
-.one, .two{
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
-}
+
+
 
 .out-container
 {
     display: flex;
-    padding: 5rem;
-    /* padding: 5rem; */
-
-}
-/* .one{
-    margin-top: 10rem;
     padding-right: 5rem;
-    margin-left: -5rem;
+    padding-left: 5rem;
+
 
 }
-*/
+
 .two{
-    /* padding-left: 5rem;
-    margin-right:-5rem ; */
+
     margin-top: -15%;
 
 } 
@@ -518,13 +485,12 @@ section.dobra-3{
 .service-desc h6{
     /* font-family: 'Lato-Black'; */
     font-weight: bold;
-    color: #f4f4f4;
+    color: #545454;
 
 }
 
 .service-desc p {
     color: #767c7c;
-    color: white;
 
 
 }
@@ -540,7 +506,7 @@ section.dobra-3{
 section.dobra-4{
 
     margin: 0;
-    margin-top: -600px;
+    margin-top: -700px;
     /* background: pink;  */
     /* padding: 20vh 10vw;  */
     min-width: 100%;
@@ -557,7 +523,7 @@ section.dobra-4{
 }
 
 #bg-4{
-    min-height:1200px;
+    min-height:1600px;
     margin-top: -600px;
     background: url("../img/Background-dobra-4.png");
     /* background: bisque; */
@@ -567,10 +533,7 @@ section.dobra-4{
     position: relative;
     display: block;
     z-index: -4;
-    /* background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;  */
+    
 
      background-position: center;
 
@@ -582,11 +545,11 @@ section.dobra-4{
 
 section.dobra-5{
     margin: 0;
-    margin-top: -1150px;
+    margin-top: -1250px;
     /* background: pink;  */
     /* padding: 20vh 10vw;  */
     min-width: 100%;
-    min-height: 1100px;
+    min-height: 1150px;
     position: relative;
     overflow: hidden;
     z-index: -4;
@@ -602,7 +565,7 @@ section.dobra-5{
 }
 
 #bg-5{
-    min-height:1600px;
+    min-height:1800px;
     margin-top: -400px;
     background: url("../img/Background-dobra-5.png");
     /* background: lightsalmon; */
@@ -612,10 +575,7 @@ section.dobra-5{
     position: relative;
     display: block;
     z-index: -5;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;  
-     background-position: center; */
+   
 
 }
 .d5-container{
@@ -696,9 +656,8 @@ section.dobra-5{
 section.dobra-6{
     /* background: teal; */
     margin: 0;
-    margin-top: -1150px;
+    margin-top: -1100px;
     /* background: pink;  */
-    /* padding: 20vh 10vw;  */
     min-width: 100%;
     min-height: 1100px;
     position: relative;
@@ -724,10 +683,7 @@ section.dobra-6{
     position: relative;
     display: block;
     z-index: -6;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;  
-     background-position: center; */
+   
 
 }
 .d6-texts, .dobra-6 .carousel-item{
@@ -746,21 +702,14 @@ section.dobra-6{
 }
 
 #icone-email img{
-    margin-top: -3em;
+    margin-top: -2.5em;
 }
 .dobra-6 img
 {
-   width: 36%;
+   /* width: 36%; */
    margin: auto;
 }
 
-@media(max-width:1330px)
-{
-        #bg-1,#bg-2, #bg-3{
-            background-size: cover;
-        }
-
-}
 
 @media(min-width:1800px)
 {
@@ -768,43 +717,9 @@ section.dobra-6{
         padding: 2rem !important;
     }
 
-    #bg-3{
-        min-height: 1900px;
-    }
-    section.dobra-3{
-        margin-top: -1000px;
-    }
-
-    #bg-6{
-        min-height:1600px;
-        margin-top: -400px;
-    }
-    section.dobra-6{
-        margin-top: -1100px;
-    }
+   
 }
 
-
-
-
-
-
-
-
-
-@media (min-width:768px) and (max-width:1024px)
-{
-    /* #bg-3{
-        -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-    background-position: center;
-
-    } */
-
-  
-}
 @media screen and (max-width:767px) and (min-width:425px){
     .dobra-6 img {
         width: 50%;
@@ -814,6 +729,12 @@ section.dobra-6{
 @media screen and (max-width:426px){
     .dobra-6 img {
         width: 60%;
+    }
+    .header-section {
+        margin-top: 2rem !important;
+    }
+    button.create-account{
+        max-width: 150px;
     }
 
 }
@@ -833,12 +754,9 @@ section.dobra-6{
 
 section.dobra-7{
     margin: 0;
-    margin-top: -650px;
-    /* background: pink;  */
-    /* padding: 20vh 10vw;  */
-    /* background: yellow; */
+    margin-top: -700px;
     min-width: 100%;
-    min-height: 550px;
+    min-height: 800px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -850,23 +768,17 @@ section.dobra-7{
     word-wrap: break-word;
 }
 #bg-7{
-    min-height:1100px;
+    min-height:1000px;
     margin-top: -400px;
     background: url("../img/Background-dobra-7.png") 50%;
     /* background: cornflowerblue; */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 150% 100%;
     background-position: center;
     position: relative;
     display: block;
     z-index: -7;
-    /* background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;  */
-
-     background-position: center;
-
+    
 }
 .d7-container{
 
@@ -877,39 +789,30 @@ section.dobra-7{
 }
 
 .dobra-8{
-    /* min-height: 550px; */
-    margin-top: -3px;
     z-index: -7;
-    /* margin-top: -650px; */
 
 }
 #bg-8{
-    min-height:1100px;
-    margin-top: -350px;
-    background: url("../img/Background-dobra-8.png");
-    background:crimson;
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height:900px;
+    margin-top: -900px;
+    background: url("../img/Background-dobra-6.png") ;
+    background-size: 100%;
+    /* background:crimson; */
     position: relative;
     display: block;
     z-index: -8;
-    /* background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;  */
+    background-repeat: no-repeat;
+    
 
-     background-position: center;
 
 }
 .custom-shape-divider-bottom-1618926308 {
     margin-top: -100px;
     position: relative;
     z-index: -7;
-    /* bottom: 0;
-    left: 0; */
+   
     width: 100%;
     overflow: hidden;
-    /* line-height: 0; */
 }
 
 .custom-shape-divider-bottom-1618926308 svg {
@@ -925,20 +828,33 @@ section.dobra-7{
 }
 
 
-@media(max-width:1333px)
+
+
+@media(max-width:1342px)
 {
-    .out-container{
-        padding: 5rem 1rem;
-    }
-    .one, .two{
-        padding-right: 0;
-        margin-left: 0;
+    #bg-2{
+        background-size:cover;
+        background-position:center;
     }
 }
 
-@media(max-width:1024px)
+
+
+
+
+@media (min-width:1215px)
 {
-    #bg-1, #bg-2, #bg-3{
+    .services .items{
+        max-width: 70%;
+
+    }
+
+}
+
+
+@media(max-width:645px)
+{
+    #bg-1, #bg-2,#bg-3,  #bg-4, #bg-5,  #bg-7{
         -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -949,71 +865,206 @@ section.dobra-7{
 }
 
 
-@media(min-width:1025px)
+@media(min-width:250px) and (max-width:295px)
 {
-    .services .items{
-        max-width: 70%;
 
+    /*DOBRA -3*/
+    .out-container {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+    }
+    #bg-3 {
+        min-height: 1800px !important;
+    }
+    section.dobra-3 {
+        margin-top: -1700px !important;
+    }
+    #bg-5 {
+        min-height: 2800px;
     }
 
-    @media(min-width:1830px)
-    {
-        /* section.dobra-1, #bg-1{
-            min-height: 700px;
-        }
-    
-        section.dobra-1{
-            margin-top: -700px;
-        }
-    
-        section.dobra-2{
-            margin-top: -50vh  !important;
-        } */
-        /* .header-section{
-            padding: 5rem !important;
-        } */
+    section.dobra-5 {
+        margin-top: -2450px;
+    }
+}
+@media (min-width: 296px) and (max-width:430px)
+{
+
+    .out-container {
+        padding-left: 2em !important;
+        padding-right: 2em !important;
+    }
+    #bg-3 {
+        min-height: 1900px !important;
+    }
+    section.dobra-3 {
+        margin-top: -1790px !important;
+    } 
+   
+    #bg-5 {
+        min-height: 2700px;
     }
 
-    /* section.dobra-1, section.dobra-2 {
-        background-repeat: no-repeat;
-        -moz-background-size: 100% 100%;
-        -webkit-background-size: 100% 100%;
-        background-size: 100% 100%;
-        }
-    section.dobra-3{
-        -moz-background-size: 100% 100%;
-        -webkit-background-size: 100% 100%;
-        background-size: 100% 100%;
-        background-position: center;
-    } */
-
-
+    section.dobra-5 {
+        margin-top: -2350px;
+    }
 }
 
-
-
-@media(max-width:993px)
+@media(min-width:430px)and (max-width:465px)
 {
-    /* #bg-4{
-        min-height: 1500px;
+    #bg-3 {
+        min-height: 1950px !important;
+        margin-top: -200px;
+    }
+
+    section.dobra-3 {
+    
+        margin-top: -1840px !important;
+    }
+
+    #bg-5 {
+        min-height: 2600px;
+    }
+
+    section.dobra-5 {
+        margin-top: -2150px;
+    }
+}
+   
+
+    
+@media(min-width:465px) and (max-width:490px)
+{
+    .out-container {
+        display: flex;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    #bg-3 {
+        min-height: 3100px !important;
+    }
+    section.dobra-3 {
+        
+        margin-top: -2045px !important;
+    }
+}
+@media(min-width:491px) and (max-width:560px)
+{
+    .out-container {
+        display: flex;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    #bg-3 {
+        min-height: 3300px;
+    }
+    section.dobra-3 {
+        
+        margin-top: -2245px;
+    }
+}
+@media(min-width:560px) and (max-width:575px)
+{
+    .out-container {
+        display: flex;
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+    }
+    #bg-3 {
+        min-height: 3400px !important
+        ;
+    }
+    section.dobra-3 {
+        
+        margin-top: -2345px !important;
+    }
+}
+
+@media(min-width:576px) and (max-width:790px)
+{
+    .out-container{
+        padding: 0 2em !important;
+    }
+    section.dobra-3 {
+        margin-top: -1545px;
+    }
+    #bg-3 {
+        min-height: 2600px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px)
+{
+    #bg-5 {
+        min-height: 2250px;
+        margin-top: -300px;
+    }
+    section.dobra-5 {
+        margin-top: -1850px;
+    }
+}
+@media(max-width:465px)
+{
+    /*DOBRA 2*/
+
+    
+    .out-container {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    #bg-3 {
+        min-height: 2000px;
+        margin-top: -200px;
+    }
+
+    section.dobra-3 {
+    
+        margin-top: -1890px;
+    }
+
+    #bg-4{
+        min-height: 1300px;
     }
     section.dobra-4{
-        margin-top: -800px;
+        margin-top: -600px;
     }
+}
+@media(min-width:465px) and (max-width:661px)
+{
+  
     #bg-5{
-        min-height: 2000px;
+        min-height: 3050px;
     }
     section.dobra-5{
-        margin-top: -1800px;
-    } */
+        margin-top: -2550px;
+    }
+}
 
-   
+@media(max-width:600px)
+{
+    #bg-2{
+        min-height: 900px;
+    }
+}
+@media(min-width:662px) and (max-width:768px)
+{
+    #bg-5{
+        min-height: 2300px;
+    }
+    section.dobra-5 {
+        margin-top: -1800px;
+    }
 }
 
 @media(max-width:768px)
 {
+    .d2-texts{
+        margin: 0;
+    }
     
     .d2-texts .d2-two{
+        margin-top: 2rem;
         margin-left: 0;
     }
 
@@ -1025,69 +1076,19 @@ section.dobra-7{
         border-radius: 25px;
     }
 
-   
-/* 
-    .two{
-        padding-left: 0;
-        margin-right: 0;
-    } */
-    
-   
-    /* #bg-4{
-        min-height: 1300px !important;
-        background-size: 100% 100%;
-    }
-    #bg-7{
-        background-size: 100% 100%;
-    }
-    section.dobra-4{
-        margin-top: -650px !important;
-    } */
-
-  
-
+ 
 }
-@media(min-width:431px) and (max-width:576px)
-{
-    /* #bg-3{
-        min-height: 1800px !important;
-    }
-    section.dobra-3{
-        margin-top: -900px !important;
-    } */
 
-    
-    /* #bg-5{
-        min-height: 2700px !important;
-    }
-    section.dobra-5{
-        margin-top: -2570px !important;
-    } */
-
-}
 
 @media(max-width:430px)
 {
     .para-empresas h1{
         padding-top:5rem;
     }
-    /* #bg-5{
-        min-height: 2900px !important;
-    }
-    section.dobra-5{
-        margin-top: -2700px !important;
-    } */
+ 
 }
 
-@media(max-width:359px)
-{
-    #bg-3 {
-        /* min-height: 2200px !important;
-    }
-    section.dobra-3 {
-    margin-top: -1620px !important; */
-}
-}
+
 @media (max-width:325px)
 {
     a.navbar-brand.company-name{
@@ -1099,47 +1100,10 @@ section.dobra-7{
 
 
 
-@media(min-width:576) and (max-width:599px)
-{
-    /* #bg-3{
-        min-height: 1800px !important;
-    } */
-}
 
 
 @media(max-width:575px)
     {
-
-   
-
-    #bg-3{
-        /* background-size: cover !important; */
-        min-height: 2300px !important;
-        background-position: center;
-
-   
-
-    }
-    section.dobra-3 {
-        margin-top: -1550px !important;
-    }
-    /* section.dobra-3 {
-        margin-top: -1800px !important;
-    } */
-    /* .service-desc h6{
-        color: #545454;
-    
-    }
-    
-    .service-desc p {
-        color: #767c7c;
-
-    } */
-    
-    .out-container{
-        padding: 0 2rem;
-
-    }
 
     .d2-texts .d2-two, .d2-texts .d2-one{
         padding:0;
@@ -1148,28 +1112,67 @@ section.dobra-7{
 
 @media(max-width:465px)
 {
-    /* #bg-3{
-        min-height: 2100px !important;
-        margin-top: -600px !important;
-    }
-    section.dobra-3 {
-        margin-top: -1600px !important;
-    } */
+    
     .flip-card{
-        width: 250px !important;
-        height: 250px !important;
+        width: 245px !important;
+        height: 245px !important;
     }
-    .out-container{
-        padding: 0 1em !important;
+   
+}
+
+@media(max-width:800px)
+{
+    .d2-texts br{
+        display: none;
+    }
+    .d2-texts .d2-one{
+        margin-top: 70px;
+    }
+   
+}
+
+@media(min-width:992px)
+{
+    
+  .nav-item:after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid #F7F7F7 ;
+    transform: scaleX(0);
+    transition: 250ms ease-in-out;
 
     }
-    #bg-3{
-        min-height: calc(100vw * 6) !important;
+
+    .nav-item:hover::after{
+    transform: scaleX(1);
     }
-    section.dobra-3 {
-        margin-top: calc(-100vh - 300px) !important;
-    }
+    
 }
+@media(max-width:1270px)
+{
+    #bg-1, #bg-2{
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .d2-texts .d2-two{
+       margin-right: 0 ;
+   
+   
+   }
+   img.target {
+    width: 60%;
+   }
+    
+    
+    
+
+   
+}
+
 
 
 @media(min-width:601px)
@@ -1190,53 +1193,8 @@ section.dobra-7{
         display: none;
     }
 
-
-    #bg-2{
-        min-height: 1000px;
-    }
-    /* #bg-1, #bg-2, #bg-4, #bg-5, #bg-6, #bg-7{
-        -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    } */
-    /* section.dobra-2{
-        margin-top: -600px;
-    }
-    #bg-2{
-        min-height: 800px;
-    } */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-@media (max-width:767px)
-{
-    section.dobra-1{
-    background-size: 100% 80vh;
-
-    }
-}
-
-
-@media (max-width:1024px)
-{
-    section.dobra-1{
-    background-size: 100% 50vh;
-
-    }
-} */
 
 @keyframes fadeInUp {
     from {
