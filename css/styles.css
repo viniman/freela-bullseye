@@ -39,6 +39,19 @@ h1,h3{
 
 }
 
+#ancora1, #ancora2, #ancora3, #bullseye-midia, #para-empresas, #contato{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    margin-top: -10px; 
+    z-index: -1;
+}
+
+#contato{
+    margin-top: -150px;
+}
+
 
 
  section.dobra-1{
@@ -65,11 +78,7 @@ h1,h3{
     display: block;
     z-index: 0;
     background-repeat: no-repeat;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: scroll; */
-    /* background-position: center; */
+
 }
 
 
@@ -88,18 +97,6 @@ h1,h3{
   }
 
 
-  .nav-item:after{
-      content: '';
-      display: block;
-      border-bottom: 2px solid #F7F7F7 ;
-      transform: scaleX(0);
-      transition: 250ms ease-in-out;
-
-  }
-
-  .nav-item:hover::after{
-    transform: scaleX(1);
-  }
 
   .navbar-nav > li{
       padding:0 0.7rem;
@@ -120,6 +117,8 @@ h1,h3{
          display: none;
      }
   }
+
+
 
  button.geral-button{
      background: #46cc66;
@@ -207,13 +206,12 @@ h1,h3{
 
 
  .header-section{
-    margin-top: 5rem;
+    margin-top: 1rem;
     padding: 2rem;
      display: flex;
      align-items: center;
      width: 100%;
      max-height: 100%;
-   /* height: 500px; */
 
 
 
@@ -226,15 +224,13 @@ img.target {
 div.header-1{
 
 
-    /* padding-bottom: 75px; */
     display: flex;
     justify-content: start;
     align-items: center;
     z-index: 0;
     max-width: 100%;
-    /* max-height: 100%; */
     margin-left: 10%;
-    max-height: 100%;
+    min-height: 500px;
 
 
 }
@@ -310,15 +306,13 @@ button.create-account{
      font-weight: bold;
      border-radius: 50px;
      border: none;
-     /* padding: 5px 20px; */
 }
 
 
 section.dobra-2{
     margin: 0;
     margin-top: -550px;
-    /* background: pink;  */
-    /* padding: 20vh 10vw;  */
+   
     min-width: 100%;
     min-height: 550px;
     position: relative;
@@ -341,11 +335,7 @@ section.dobra-2{
     display: block;
     z-index: -2;
     background-repeat: no-repeat;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: scroll; */
-    /* background-position: center; */
+   
 
 }
 
@@ -358,9 +348,6 @@ section.dobra-2{
     font-family: 'Lato-Black';
     position: relative;
     z-index: 2;
-
-    /* margin-top: 400px; */
-    /* margin: auto; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -375,18 +362,13 @@ section.dobra-2{
 
 }
 .d2-texts .d2-one{
-     /* margin-top: -100px;  */
     margin-top: 110px;
-    /* padding:30px 0; */
 
 
 }
 
 .d2-texts .d2-two{
-    margin-top: 50px;
-     /* margin-top: -140px;   */
-    /* padding:30px 0; */
-    margin-left: -5rem;
+    margin-right: 8em;
 
 
 }
@@ -394,10 +376,7 @@ section.dobra-2{
 
 section.dobra-3{
     margin: 0;
-    /* padding: 5rem 0; */
     margin-top: -1645px;
-    /* background: pink;  */
-    /* padding: 20vh 10vw;  */
     min-width: 100%;
     min-height: 700px;
     position: relative;
@@ -405,7 +384,6 @@ section.dobra-3{
     overflow: hidden;
     z-index: -2;
     word-wrap: break-word;
-    /* background: indigo; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -415,7 +393,6 @@ section.dobra-3{
 #bg-3{
     min-height: 2700px;
     margin-top: -1150px;
-    /*linear-gradient(rgba(87, 86, 86, 0.6), rgba(75, 75, 75, 0.616)), */
     background: url("../img/Background-dobra-5.png");
     /* background:lightgreen; */
     background-position: center;
@@ -424,10 +401,7 @@ section.dobra-3{
     display: block;
     z-index: -3;
     background-repeat: no-repeat;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-position: center;  */
+  
 
 }
 
@@ -440,10 +414,8 @@ section.dobra-3{
     max-width: 100%;
 }
 .d3-content{
-    /* margin-top: 120vh; */
     max-height: 100%;
     word-wrap: break-word;
-    /* overflow:hidden; */
 }
 .container{
     display: flex;
@@ -461,22 +433,12 @@ section.dobra-3{
     display: flex;
     padding-right: 5rem;
     padding-left: 5rem;
-    /* padding: 3rem 5rem;
-    padding-bottom: 1rem;
-    padding-bottom: 1rem; */
-    /* padding: 5rem; */
+
 
 }
-/* .one{
-    margin-top: 10rem;
-    padding-right: 5rem;
-    margin-left: -5rem;
 
-}
-*/
 .two{
-    /* padding-left: 5rem;
-    margin-right:-5rem ; */
+
     margin-top: -15%;
 
 } 
@@ -571,10 +533,7 @@ section.dobra-4{
     position: relative;
     display: block;
     z-index: -4;
-    /* background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;  */
+    
 
      background-position: center;
 
@@ -616,10 +575,7 @@ section.dobra-5{
     position: relative;
     display: block;
     z-index: -5;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;  
-     background-position: center; */
+   
 
 }
 .d5-container{
@@ -702,7 +658,6 @@ section.dobra-6{
     margin: 0;
     margin-top: -1100px;
     /* background: pink;  */
-    /* padding: 20vh 10vw;  */
     min-width: 100%;
     min-height: 1100px;
     position: relative;
@@ -728,10 +683,7 @@ section.dobra-6{
     position: relative;
     display: block;
     z-index: -6;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;  
-     background-position: center; */
+   
 
 }
 .d6-texts, .dobra-6 .carousel-item{
@@ -803,9 +755,6 @@ section.dobra-6{
 section.dobra-7{
     margin: 0;
     margin-top: -700px;
-    /* background: pink;  */
-    /* padding: 20vh 10vw;  */
-    /* background: yellow; */
     min-width: 100%;
     min-height: 800px;
     position: relative;
@@ -829,13 +778,7 @@ section.dobra-7{
     position: relative;
     display: block;
     z-index: -7;
-    /* background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;  */
-
-     background-position: center;
-
+    
 }
 .d7-container{
 
@@ -846,16 +789,14 @@ section.dobra-7{
 }
 
 .dobra-8{
-    /* min-height: 550px; */
-    /* margin-top: -3px; */
     z-index: -7;
-    /* margin-top: -650px; */
 
 }
 #bg-8{
     min-height:900px;
     margin-top: -900px;
     background: url("../img/Background-dobra-6.png") ;
+    background-size: 100%;
     /* background:crimson; */
     position: relative;
     display: block;
@@ -869,11 +810,9 @@ section.dobra-7{
     margin-top: -100px;
     position: relative;
     z-index: -7;
-    /* bottom: 0;
-    left: 0; */
+   
     width: 100%;
     overflow: hidden;
-    /* line-height: 0; */
 }
 
 .custom-shape-divider-bottom-1618926308 svg {
@@ -915,7 +854,7 @@ section.dobra-7{
 
 @media(max-width:645px)
 {
-    #bg-1, #bg-2,#bg-3,  #bg-4, #bg-5, #bg-6, #bg-7{
+    #bg-1, #bg-2,#bg-3,  #bg-4, #bg-5,  #bg-7{
         -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -924,24 +863,21 @@ section.dobra-7{
     }
     
 }
-/* 
-@media(max-width:576px)
-{
-    #bg-3{
-        min-height: 3100px !important;
-    }
-    section.dobra-3{
-        margin-top: -2050px !important;
-    }
-} */
+
 
 @media(min-width:250px) and (max-width:295px)
 {
+
+    /*DOBRA -3*/
+    .out-container {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+    }
     #bg-3 {
-        min-height: 2000px !important;
+        min-height: 1800px !important;
     }
     section.dobra-3 {
-        margin-top: -1900px !important;
+        margin-top: -1700px !important;
     }
     #bg-5 {
         min-height: 2800px;
@@ -951,8 +887,19 @@ section.dobra-7{
         margin-top: -2450px;
     }
 }
-@media (min-width: 296px) and (max-width:380px)
+@media (min-width: 296px) and (max-width:430px)
 {
+
+    .out-container {
+        padding-left: 2em !important;
+        padding-right: 2em !important;
+    }
+    #bg-3 {
+        min-height: 1900px !important;
+    }
+    section.dobra-3 {
+        margin-top: -1790px !important;
+    } 
    
     #bg-5 {
         min-height: 2700px;
@@ -963,16 +910,16 @@ section.dobra-7{
     }
 }
 
-@media(min-width:381px)and (max-width:465px)
+@media(min-width:430px)and (max-width:465px)
 {
     #bg-3 {
-        min-height: 1900px !important;
+        min-height: 1950px !important;
         margin-top: -200px;
     }
 
     section.dobra-3 {
     
-        margin-top: -1790px !important;
+        margin-top: -1840px !important;
     }
 
     #bg-5 {
@@ -983,16 +930,79 @@ section.dobra-7{
         margin-top: -2150px;
     }
 }
-    /* #bg-4 {
-        min-height: 1150px !important;
-    }
-
-    section.dobra-4 {
-        margin-top: -500px;
-    } */
+   
 
     
+@media(min-width:465px) and (max-width:490px)
+{
+    .out-container {
+        display: flex;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    #bg-3 {
+        min-height: 3100px !important;
+    }
+    section.dobra-3 {
+        
+        margin-top: -2045px !important;
+    }
+}
+@media(min-width:491px) and (max-width:560px)
+{
+    .out-container {
+        display: flex;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    #bg-3 {
+        min-height: 3300px;
+    }
+    section.dobra-3 {
+        
+        margin-top: -2245px;
+    }
+}
+@media(min-width:560px) and (max-width:575px)
+{
+    .out-container {
+        display: flex;
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+    }
+    #bg-3 {
+        min-height: 3400px !important
+        ;
+    }
+    section.dobra-3 {
+        
+        margin-top: -2345px !important;
+    }
+}
 
+@media(min-width:576px) and (max-width:790px)
+{
+    .out-container{
+        padding: 0 2em !important;
+    }
+    section.dobra-3 {
+        margin-top: -1545px;
+    }
+    #bg-3 {
+        min-height: 2600px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px)
+{
+    #bg-5 {
+        min-height: 2250px;
+        margin-top: -300px;
+    }
+    section.dobra-5 {
+        margin-top: -1850px;
+    }
+}
 @media(max-width:465px)
 {
     /*DOBRA 2*/
@@ -1022,13 +1032,7 @@ section.dobra-7{
 }
 @media(min-width:465px) and (max-width:661px)
 {
-    #bg-3 {
-        min-height: 3000px;
-    }
-    section.dobra-3 {
-        
-        margin-top: -1945px;
-    }
+  
     #bg-5{
         min-height: 3050px;
     }
@@ -1037,6 +1041,12 @@ section.dobra-7{
     }
 }
 
+@media(max-width:600px)
+{
+    #bg-2{
+        min-height: 900px;
+    }
+}
 @media(min-width:662px) and (max-width:768px)
 {
     #bg-5{
@@ -1049,10 +1059,12 @@ section.dobra-7{
 
 @media(max-width:768px)
 {
-    #bg-2{
-        min-height: 900px;
+    .d2-texts{
+        margin: 0;
     }
+    
     .d2-texts .d2-two{
+        margin-top: 2rem;
         margin-left: 0;
     }
 
@@ -1064,13 +1076,7 @@ section.dobra-7{
         border-radius: 25px;
     }
 
-    /* .out-container{
-        padding: 2rem 2rem;
-    } */
-
-
-  
-
+ 
 }
 
 
@@ -1114,7 +1120,35 @@ section.dobra-7{
    
 }
 
-@media(max-width:1024px)
+@media(max-width:800px)
+{
+    .d2-texts br{
+        display: none;
+    }
+    .d2-texts .d2-one{
+        margin-top: 70px;
+    }
+   
+}
+
+@media(min-width:992px)
+{
+    
+  .nav-item:after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid #F7F7F7 ;
+    transform: scaleX(0);
+    transition: 250ms ease-in-out;
+
+    }
+
+    .nav-item:hover::after{
+    transform: scaleX(1);
+    }
+    
+}
+@media(max-width:1270px)
 {
     #bg-1, #bg-2{
         -webkit-background-size: cover;
@@ -1123,6 +1157,17 @@ section.dobra-7{
         background-size: cover;
         background-position: center;
     }
+    
+    .d2-texts .d2-two{
+       margin-right: 0 ;
+   
+   
+   }
+   img.target {
+    width: 60%;
+   }
+    
+    
     
 
    
