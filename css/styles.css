@@ -13,7 +13,7 @@
 
  *{ box-sizing: border-box;}
 html, body{ height:100%; }
-body{ position:static; margin:0; padding: 0;}
+body{ position:static; margin:0; margin-bottom: 2300px; padding: 0;}
 body{
   font-family: sans-serif;
   overflow-x: hidden;
@@ -33,12 +33,24 @@ h1,h3{
 
  section.main
 {
-   width: 100vw;
-   height: 100vh;
-
-
+    /*para o parallax*/
+    /* z-index: 2;
+    position: relative;
+    width: 100vw;
+    height: 1500px;
+    margin-bottom: 350px; */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
 }
 
+/* .cont {
+    width: 100%;
+    position: fixed;
+    height: 350px;
+    bottom: 0;
+    z-index: -9;
+} */
 #ancora1, #ancora2, #ancora3, #bullseye-midia, #para-empresas, #contato{
     position: absolute;
     width: 1px;
@@ -51,7 +63,6 @@ h1,h3{
 #contato{
     margin-top: -150px;
 }
-
 
 
  section.dobra-1{
@@ -320,7 +331,7 @@ section.dobra-2{
     overflow: hidden;
     z-index: -1;
     word-wrap: break-word;
-    padding: 3rem;
+    padding: 1.5rem;
 
 }
 
@@ -339,8 +350,9 @@ section.dobra-2{
 
 }
 
+
 .d2-out{
-    padding-top: 5rem;
+    padding-top: 3rem;
 
     max-height: fit-content;
 }
@@ -354,6 +366,13 @@ section.dobra-2{
     justify-content: center;
 }
 
+
+.d2-text h6 {
+    padding: 1em;
+    background: rgba(255,255,255, 0.75);
+    font-weight: bold;
+    border-radius: 2em;
+}
 .d2-text{
     color: #483c4b;
 }
@@ -362,8 +381,8 @@ section.dobra-2{
 
 }
 .d2-texts .d2-one{
-    margin-top: 110px;
-
+    margin-top: 2em;
+    /* margin-top: 90px; */
 
 }
 
@@ -754,8 +773,8 @@ section.dobra-6{
 
 section.dobra-7{
     margin: 0;
-    margin-top: -700px;
-    min-width: 100%;
+    margin-top: -800px;
+        min-width: 100%;
     min-height: 800px;
     position: relative;
     overflow: hidden;
@@ -769,12 +788,12 @@ section.dobra-7{
 }
 #bg-7{
     min-height:1000px;
-    margin-top: -400px;
+    margin-top: -200px;
     background: url("../img/Background-dobra-7.png") 50%;
     /* background: cornflowerblue; */
     background-repeat: no-repeat;
-    background-size: 150% 100%;
-    background-position: center;
+    background-size: cover;
+    background-position: bottom;
     position: relative;
     display: block;
     z-index: -7;
@@ -795,7 +814,8 @@ section.dobra-7{
 #bg-8{
     min-height:900px;
     margin-top: -900px;
-    background: url("../img/Background-dobra-6.png") ;
+    /* background: url("../img/Background-dobra-6.png") ; */
+    background: #484c4b;
     background-size: 100%;
     /* background:crimson; */
     position: relative;
@@ -854,7 +874,7 @@ section.dobra-7{
 
 @media(max-width:645px)
 {
-    #bg-1, #bg-2,#bg-3,  #bg-4, #bg-5,  #bg-7{
+    #bg-1, #bg-2,#bg-3,  #bg-4, #bg-5{
         -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -993,7 +1013,7 @@ section.dobra-7{
     }
 }
 
-@media(min-width:768px) and (max-width:1024px)
+@media(min-width:768px) and (max-width:991px)
 {
     #bg-5 {
         min-height: 2250px;
